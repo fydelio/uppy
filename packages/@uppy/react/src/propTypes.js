@@ -40,6 +40,7 @@ const dashboard = {
   note: PropTypes.string,
   metaFields,
   proudlyDisplayPoweredByUppy: PropTypes.bool,
+  forceShowAcquirerSourceList: PropTypes.bool,
   disableStatusBar: PropTypes.bool,
   disableInformer: PropTypes.bool,
   disableThumbnailGenerator: PropTypes.bool,

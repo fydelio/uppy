@@ -94,6 +94,7 @@ uppy.use(Dashboard, {
   animateOpenClose: true,
   fileManagerSelectionType: 'files',
   proudlyDisplayPoweredByUppy: true,
+  forceShowAcquirerSourceList: false,
   onRequestCloseModal: () => this.closeModal(),
   showSelectedFiles: true,
   showRemoveButtonAfterComplete: false,
@@ -285,6 +286,12 @@ Configure the type of selections allowed when browsing your file system via the 
 Uppy is provided to the world for free by the team behind [Transloadit](https://transloadit.com). In return, we ask that you consider keeping a tiny Uppy logo at the bottom of the Dashboard, so that more people can discover and use Uppy.
 
 This is, of course, entirely optional. Just set this option to false if you do not wish to display the Uppy logo.
+
+### `forceShowAcquirerSourceList: false`
+
+Force the source list (aquirerers) to always show, even if only one source list is available.
+
+Default behaviour is to hide the source list, if only one source provider is available.
 
 ### `disableStatusBar: false`
 

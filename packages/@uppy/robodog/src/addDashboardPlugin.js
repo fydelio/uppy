@@ -18,6 +18,7 @@ const dashboardOptionNames = [
   'disableThumbnailGenerator',
   'showSelectedFiles',
   'proudlyDisplayPoweredByUppy',
+  'forceShowAcquirerSourceList',
   'theme'
 ]
 

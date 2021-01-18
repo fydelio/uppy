@@ -139,6 +139,8 @@ module.exports = class Dashboard extends Plugin {
       animateOpenClose: true,
       fileManagerSelectionType: 'files',
       proudlyDisplayPoweredByUppy: true,
+      forceShowAcquirerSourceList: false,
+
       onRequestCloseModal: () => this.closeModal(),
       showSelectedFiles: true,
       showRemoveButtonAfterComplete: false,
@@ -935,6 +937,7 @@ module.exports = class Dashboard extends Plugin {
       showLinkToFileUploadResult: this.opts.showLinkToFileUploadResult,
       fileManagerSelectionType: this.opts.fileManagerSelectionType,
       proudlyDisplayPoweredByUppy: this.opts.proudlyDisplayPoweredByUppy,
+      forceShowAcquirerSourceList: this.opts.forceShowAcquirerSourceList,
       hideCancelButton: this.opts.hideCancelButton,
       hideRetryButton: this.opts.hideRetryButton,
       hidePauseResumeButton: this.opts.hidePauseResumeButton,

@@ -40,6 +40,7 @@ declare module Dashboard {
     plugins?: string[]
     fileManagerSelectionType?: 'files' | 'folders' | 'both';
     proudlyDisplayPoweredByUppy?: boolean
+    forceShowAcquirerSourceList?: boolean
     showLinkToFileUploadResult?: boolean
     showProgressDetails?: boolean
     showSelectedFiles?: boolean

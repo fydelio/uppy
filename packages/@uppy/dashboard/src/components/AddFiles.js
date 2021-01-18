@@ -219,7 +219,7 @@ class AddFiles extends Component {
         {this.renderHiddenInput(false, (ref) => { this.fileInput = ref })}
         {this.renderHiddenInput(true, (ref) => { this.folderInput = ref })}
         {this.renderDropPasteBrowseTagline()}
-        {this.props.acquirers.length > 0 && this.renderAcquirers(this.props.acquirers)}
+        {(this.props.acquirers.length > 0 || this.props.forceShowAcquirerSourceList) && this.renderAcquirers(this.props.acquirers)}
         <div class="uppy-Dashboard-AddFiles-info">
           {this.props.note && <div class="uppy-Dashboard-note">{this.props.note}</div>}
           {this.props.proudlyDisplayPoweredByUppy && this.renderPoweredByUppy(this.props)}
