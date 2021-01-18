@@ -219,6 +219,8 @@ class AddFiles extends Component {
         {this.renderHiddenInput(false, (ref) => { this.fileInput = ref })}
         {this.renderHiddenInput(true, (ref) => { this.folderInput = ref })}
         {this.renderDropPasteBrowseTagline()}
+        {console.log("Value of new Config Option: " + this.props.forceShowAcquirerSourceList)}
+        {debugger}
         {(this.props.acquirers.length > 0 || this.props.forceShowAcquirerSourceList) && this.renderAcquirers(this.props.acquirers)}
         <div class="uppy-Dashboard-AddFiles-info">
           {this.props.note && <div class="uppy-Dashboard-note">{this.props.note}</div>}
